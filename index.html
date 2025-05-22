@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>李想AI编程的个人博客</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>李想AI编程</h1>
+            <p class="subtitle">个人博客 | AIGC爱好者</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- 个人介绍卡片 -->
+        <section class="card" id="about">
+            <h2>关于我</h2>
+            <div class="profile">
+                <img src="./images/Avatar.png" alt="李想AI编程头像" class="avatar">
+                <div class="profile-info">
+                    <p>国企程序员&AIGC爱好者</p>
+                    <p>分享A编程知识有趣的AI资讯</p>
+                    <p>致力于人人都能学会AI编程</p>
+                    <p>让每一个想法闪闪发光</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 公众号文章卡片 -->
+        <section class="card" id="articles">
+            <h2>最新文章</h2>
+            <p class="section-desc">分享AI编程最新技术和教程，点击卡片阅读全文</p>
+            <div class="articles-container">
+                <!-- 文章卡片将通过JavaScript动态添加 -->
+            </div>
+        </section>
+
+        <!-- 社交媒体卡片 -->
+        <section class="card" id="social">
+            <h2>社交媒体</h2>
+            <p class="section-desc">关注我的其他平台，获取更多AI编程资讯</p>
+            <div class="social-icons">
+                <a href="#" class="social-icon" title="公众号" id="official-account">
+                    <i class="fab fa-weixin"></i>
+                    <div class="qr-code">
+                        <img src="./images/OfficialAccount.png" alt="公众号二维码">
+                    </div>
+                </a>
+                <a href="#" class="social-icon" title="微信" id="weixin">
+                    <i class="fab fa-weixin"></i>
+                    <div class="qr-code">
+                        <img src="./images/weixin.png" alt="微信二维码">
+                    </div>
+                </a>
+                <a href="https://v.douyin.com/2xdWSjzf5b0/" target="_blank" class="social-icon" title="抖音">
+                    <svg class="douyin-icon" viewBox="0 0 512 512" width="1em" height="1em">
+                        <path fill="currentColor" d="M256 0C114.618 0 0 114.618 0 256s114.618 256 256 256 256-114.618 256-256S397.382 0 256 0zm0 456c-110.532 0-200-89.451-200-200 0-110.531 89.451-200 200-200 110.532 0 200 89.451 200 200 0 110.532-89.451 200-200 200zm140.204-296.748C384.791 138.424 362.396 128 338.092 128c-23.367 0-44.085 9.373-57.12 25.38-8.572 10.506-13.619 22.91-14.906 36.62h-29.971v96.684c0 27.733-20.543 50.316-45.798 50.316s-45.798-22.583-45.798-50.316c0-27.733 20.543-50.316 45.798-50.316 3.594 0 7.097.41 10.465 1.172v-51.97c-3.429-.43-6.922-.683-10.465-.683-51.465 0-93.318 45.847-93.318 102.316 0 56.468 41.854 102.316 93.318 102.316s93.318-45.847 93.318-102.316v-58.708c14.386 14.346 32.895 24.18 53.466 28.292V200.57c-30.728-6.53-54.58-35.566-54.58-70.95h51.553c.008 20.526 15.754 37.326 35.552 37.326 19.896 0 36.467-16.661 36.487-37.326h51.552c0 3.884-.323 7.671-.931 11.324-.039.219-.08.436-.119.658-.803 4.085-1.971 8.006-3.453 11.65z"/>
+                    </svg>
+                </a>
+                <a href="https://www.xiaohongshu.com/user/profile/657543d8000000003d035fe7" target="_blank" class="social-icon" title="小红书">
+                    <svg class="xiaohongshu-icon" viewBox="0 0 1024 1024" width="1em" height="1em">
+                        <path d="M795.2 535.8c5.6-11.5 8.5-24.2 8.5-37.8 0-47.5-38.5-86-86-86-39.9 0-73.4 27.2-82.9 64h-243.6c-9.5-36.8-43-64-82.9-64-47.5 0-86 38.5-86 86 0 13.5 3.1 26.3 8.6 37.8-38.6 26.7-63.8 71.2-63.8 121.5 0 81.7 66.2 147.9 147.9 147.9 70.1 0 128.9-48.8 144.5-114.2h107.3c15.6 65.4 74.4 114.2 144.5 114.2 81.7 0 147.9-66.2 147.9-147.9 0-50.3-25.2-94.8-63.8-121.5z" fill="#FE2C55"/>
+                        <path d="M533.4 623.1H379.1c-13.4 0-24.3-10.9-24.3-24.3s10.9-24.3 24.3-24.3h154.3c13.4 0 24.3 10.9 24.3 24.3s-10.9 24.3-24.3 24.3zM498.9 442.1H416c-13.4 0-24.3-10.9-24.3-24.3s10.9-24.3 24.3-24.3h82.9c13.4 0 24.3 10.9 24.3 24.3s-10.9 24.3-24.3 24.3z" fill="#FE2C55"/>
+                    </svg>
+                </a>
+                <a href="http://space.bilibili.com/3546886738807157?spm_id_from=333.337.0.0" target="_blank" class="social-icon" title="哔哩哔哩">
+                    <svg class="bilibili-icon" viewBox="0 0 24 24" width="1em" height="1em">
+                        <path fill="currentColor" d="M17.813 4.653h.854c1.51.054 2.769.578 3.773 1.574 1.004.995 1.524 2.249 1.56 3.76v7.36c-.036 1.51-.556 2.769-1.56 3.773s-2.262 1.524-3.773 1.56H5.333c-1.51-.036-2.769-.556-3.773-1.56S.036 18.858 0 17.347v-7.36c.036-1.511.556-2.765 1.56-3.76 1.004-.996 2.262-1.52 3.773-1.574h.774l-1.174-1.12a1.234 1.234 0 0 1-.373-.906c0-.356.124-.658.373-.907l.027-.027c.267-.249.573-.373.92-.373.347 0 .653.124.92.373L9.653 4.44c.071.071.134.142.187.213h4.267a.836.836 0 0 1 .16-.213l2.853-2.747c.267-.249.573-.373.92-.373.347 0 .662.151.929.4.267.249.391.551.391.907 0 .355-.124.657-.373.906L17.813 4.653zM5.333 7.24c-.746.018-1.373.276-1.88.773-.506.498-.769 1.13-.786 1.894v7.52c.017.764.28 1.395.786 1.893.507.498 1.134.756 1.88.773h13.334c.746-.017 1.373-.275 1.88-.773.506-.498.769-1.129.786-1.893v-7.52c-.017-.765-.28-1.396-.786-1.894-.507-.497-1.134-.755-1.88-.773H5.333zM8 11.107c.373 0 .684.124.933.373.25.249.383.569.4.96v1.173c-.017.391-.15.711-.4.96-.249.25-.56.374-.933.374s-.684-.125-.933-.374c-.25-.249-.383-.569-.4-.96V12.44c.017-.391.15-.711.4-.96.249-.249.56-.373.933-.373zm8 0c.373 0 .684.124.933.373.25.249.383.569.4.96v1.173c-.017.391-.15.711-.4.96-.249.25-.56.374-.933.374s-.684-.125-.933-.374c-.25-.249-.383-.569-.4-.96V12.44c.017-.391.15-.711.4-.96.249-.249.56-.373.933-.373z"/></svg>
+                </a>
+                <a href="https://www.zhihu.com/people/li-xun-yao-49" target="_blank" class="social-icon" title="知乎">
+                    <i class="fab fa-zhihu"></i>
+                </a>
+                <a href="https://github.com/LiXiang-AI101" target="_blank" class="social-icon" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> 李想AI编程. 保留所有权利.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
